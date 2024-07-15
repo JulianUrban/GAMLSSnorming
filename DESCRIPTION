@@ -1,12 +1,21 @@
 Package: GAMLSSnorming
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Continuous Norming using GAMLSS
+Version: 0.0.1
 Authors@R: 
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: Some cool stuff that we need to describe here.
+License: GPL-3
+Depends: R (>= 4.3.0)
+Imports: gamlss (>= 5.4-20), gamlss.dist (>= 6.1-1), gamlss.tr (>= 5.1-7)
+LazyData: true
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+Suggests:
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Author: 
+Maintainer: 
+BugReports: https://github.com/...
