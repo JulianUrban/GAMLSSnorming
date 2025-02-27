@@ -19,7 +19,6 @@
 #' @import gamlss
 #' @importFrom stats AIC
 #' @importFrom stats BIC
-#' @importFrom gamlss GAIC
 #' @importFrom stats poly
 #'
 #' @return The gamlss model selected by the free order procedure.
@@ -97,7 +96,6 @@ gamlss_poly <- function(model, ..., data, family, criterion, max.mu = max.mu, ma
 #' @import gamlss
 #' @importFrom stats AIC
 #' @importFrom stats BIC
-#' @importFrom gamlss GAIC
 #' @importFrom stats poly
 #'
 #' @return The gamlss model selected by the free order procedure.
@@ -535,7 +533,6 @@ four_parameters_poly <- function(model, ..., data, family, criterion, max.mu = m
 #' @import gamlss
 #' @importFrom stats AIC
 #' @importFrom stats BIC
-#' @importFrom gamlss GAIC
 #' @importFrom stats poly
 #'
 #' @return The gamlss model selected by the free order procedure.
@@ -881,7 +878,6 @@ three_parameters_poly <- function(model, ..., data, family, criterion, max.mu = 
 #' @import gamlss
 #' @importFrom stats AIC
 #' @importFrom stats BIC
-#' @importFrom gamlss GAIC
 #' @importFrom stats poly
 #'
 #' @return The gamlss model selected by the free order procedure.
@@ -1152,7 +1148,6 @@ two_parameters_poly <- function(model, ..., data, family, criterion, max.mu = ma
 #' @import gamlss
 #' @importFrom stats AIC
 #' @importFrom stats BIC
-#' @importFrom gamlss GAIC
 #' @importFrom stats poly
 #'
 #' @return The gamlss model selected by the free order procedure.

@@ -10,7 +10,7 @@ Authors@R: c(person("Julian", "Urban", email = "urbanj@uni-trier.de", role = c("
 Description: This package enables continous norming using GAMLSS.
 License: GPL-3
 Depends: R (>= 4.3.0)
-Imports: gamlss (>= 5.4-20), gamlss.dist (>= 6.1-1), gamlss.tr (>= 5.1-7)
+Imports: gamlss (>= 5.4-20), gamlss.dist (>= 6.1-1), gamlss.tr (>= 5.1-7), stats (>= 4.3)
 LazyData: true
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
