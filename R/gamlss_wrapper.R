@@ -20,7 +20,7 @@
 #' @import gamlss
 #' @importFrom stats AIC
 #' @importFrom stats BIC
-#' @importFrom stats GAIC
+#' @importFrom gamlss GAIC
 #' @importFrom stats poly
 #'
 #' @return The gamlss model selected by the free order procedure.

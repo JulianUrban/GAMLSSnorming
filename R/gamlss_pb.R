@@ -15,7 +15,7 @@
 #' @import gamlss
 #' @importFrom stats AIC
 #' @importFrom stats BIC
-#' @importFrom stats GAIC
+#' @importFrom gamlss GAIC
 #' @importFrom stats poly
 #'
 #' @return The gamlss model selected by the free order procedure.
@@ -80,7 +80,7 @@ gamlss_pb <- function(model, ..., data, family, criterion) {
 #' @import gamlss
 #' @importFrom stats AIC
 #' @importFrom stats BIC
-#' @importFrom stats GAIC
+#' @importFrom gamlss GAIC
 #' @importFrom stats poly
 #'
 #' @return The gamlss model selected by the free order procedure.
@@ -528,7 +528,7 @@ four_parameters_pb_splines <- function(model, ..., data, criterion, family) {
 #' @import gamlss
 #' @importFrom stats AIC
 #' @importFrom stats BIC
-#' @importFrom stats GAIC
+#' @importFrom gamlss GAIC
 #' @importFrom stats poly
 #'
 #' @return The gamlss model selected by the free order procedure.
@@ -885,7 +885,7 @@ three_parameters_pb_splines <- function(model, ..., data, criterion, family) {
 #' @import gamlss
 #' @importFrom stats AIC
 #' @importFrom stats BIC
-#' @importFrom stats GAIC
+#' @importFrom gamlss GAIC
 #' @importFrom stats poly
 #'
 #' @return The gamlss model selected by the free order procedure.
