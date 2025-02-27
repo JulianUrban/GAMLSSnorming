@@ -142,7 +142,7 @@ four_parameters_pb_splines <- function(model, ..., data, criterion, family) {
   } else if (criterion == "BIC"){
     init.model.output.crit <- BIC(init.model.output)
   } else if (criterion == "GAIC(3)"){
-    init.model.output.crit <- GAIC(init.model.output, k = 3)
+    init.model.output.crit <- gamlss::GAIC(init.model.output, k = 3)
   }
 
   parameter.output <- matrix(NA, nrow = 100, ncol = 6);
@@ -240,10 +240,10 @@ four_parameters_pb_splines <- function(model, ..., data, criterion, family) {
       nu.model.forward.output.crit <- BIC(nu.model.forward.output);
       tau.model.forward.output.crit <- BIC(tau.model.forward.output)
     } else if(criterion == "GAIC(3)") {
-      mu.model.forward.output.crit <- GAIC(mu.model.forward.output, k = 3);
-      sigma.model.forward.output.crit <- GAIC(sigma.model.forward.output, k = 3);
-      nu.model.forward.output.crit <- GAIC(nu.model.forward.output, k = 3);
-      tau.model.forward.output.crit <- GAIC(tau.model.forward.output, k = 3)
+      mu.model.forward.output.crit <- gamlss::GAIC(mu.model.forward.output, k = 3);
+      sigma.model.forward.output.crit <- gamlss::GAIC(sigma.model.forward.output, k = 3);
+      nu.model.forward.output.crit <- gamlss::GAIC(nu.model.forward.output, k = 3);
+      tau.model.forward.output.crit <- gamlss::GAIC(tau.model.forward.output, k = 3)
     }
 
     #===============================================================================
@@ -283,7 +283,7 @@ four_parameters_pb_splines <- function(model, ..., data, criterion, family) {
       } else if (criterion == "BIC"){
         mu.model.backward.output.crit <- BIC(mu.model.backward.output)
       } else if (criterion == "GAIC(3)"){
-        mu.model.backward.output.crit <- GAIC(mu.model.backward.output, k = 3)
+        mu.model.backward.output.crit <- gamlss::GAIC(mu.model.backward.output, k = 3)
       }
     } else {
       mu.model.backward.output.crit <- Inf
@@ -310,7 +310,7 @@ four_parameters_pb_splines <- function(model, ..., data, criterion, family) {
       } else if (criterion == "BIC"){
         sigma.model.backward.output.crit <- BIC(sigma.model.backward.output)
       } else if (criterion == "GAIC(3)"){
-        sigma.model.backward.output.crit <- GAIC(sigma.model.backward.output, k = 3)
+        sigma.model.backward.output.crit <- gamlss::GAIC(sigma.model.backward.output, k = 3)
       }
     } else {
       sigma.model.backward.output.crit <- Inf
@@ -337,7 +337,7 @@ four_parameters_pb_splines <- function(model, ..., data, criterion, family) {
       } else if (criterion == "BIC"){
         nu.model.backward.output.crit <- BIC(nu.model.backward.output)
       } else if (criterion == "GAIC(3)"){
-        nu.model.backward.output.crit <- GAIC(nu.model.backward.output, k = 3)
+        nu.model.backward.output.crit <- gamlss::GAIC(nu.model.backward.output, k = 3)
       }
     } else {
       nu.model.backward.output.crit <- Inf
@@ -364,7 +364,7 @@ four_parameters_pb_splines <- function(model, ..., data, criterion, family) {
       } else if (criterion == "BIC"){
         tau.model.backward.output.crit <- BIC(tau.model.backward.output)
       } else if (criterion == "GAIC(3)"){
-        tau.model.backward.output.crit <- GAIC(tau.model.backward.output, k = 3)
+        tau.model.backward.output.crit <- gamlss::GAIC(tau.model.backward.output, k = 3)
       }
     } else {
       tau.model.backward.output.crit <- Inf

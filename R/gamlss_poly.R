@@ -943,7 +943,7 @@ two_parameters_poly <- function(model, ..., data, family, criterion, max.mu = ma
   } else if (criterion == "BIC"){
     init.model.output.crit <- BIC(init.model.output)
   } else if (criterion == "GAIC(3)"){
-    init.model.output.crit <- GAIC(init.model.output, k = 3)
+    init.model.output.crit <- gamlss::GAIC(init.model.output, k = 3)
   }
 
   parameter.output <- matrix(NA, nrow = 100, ncol = 4);
@@ -997,8 +997,8 @@ two_parameters_poly <- function(model, ..., data, family, criterion, max.mu = ma
       mu.model.forward.output.crit <- BIC(mu.model.forward.output)
       sigma.model.forward.output.crit <- BIC(sigma.model.forward.output)
     } else if(criterion == "GAIC(3)") {
-      mu.model.forward.output.crit <- GAIC(mu.model.forward.output, k = 3)
-      sigma.model.forward.output.crit <- GAIC(sigma.model.forward.output, k = 3)
+      mu.model.forward.output.crit <- gamlss::GAIC(mu.model.forward.output, k = 3)
+      sigma.model.forward.output.crit <- gamlss::GAIC(sigma.model.forward.output, k = 3)
     }
 
     #===============================================================================
@@ -1022,7 +1022,7 @@ two_parameters_poly <- function(model, ..., data, family, criterion, max.mu = ma
       } else if (criterion == "BIC"){
         mu.model.backward.output.crit <- BIC(mu.model.backward.output)
       } else if (criterion == "GAIC(3)"){
-        mu.model.backward.output.crit <- GAIC(mu.model.backward.output, k = 3)
+        mu.model.backward.output.crit <- gamlss::GAIC(mu.model.backward.output, k = 3)
       }
     } else {
       mu.model.backward.output.crit <- Inf
@@ -1044,7 +1044,7 @@ two_parameters_poly <- function(model, ..., data, family, criterion, max.mu = ma
       } else if (criterion == "BIC"){
         sigma.model.backward.output.crit <- BIC(sigma.model.backward.output)
       } else if (criterion == "GAIC(3)"){
-        sigma.model.backward.output.crit <- GAIC(sigma.model.backward.output, k=3)
+        sigma.model.backward.output.crit <- gamlss::GAIC(sigma.model.backward.output, k=3)
       }
     } else {
       sigma.model.backward.output.crit <- Inf
