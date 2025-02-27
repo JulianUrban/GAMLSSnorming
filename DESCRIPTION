@@ -1,10 +1,13 @@
 Package: GAMLSSnorming
 Title: Continuous Norming using GAMLSS
 Version: 0.0.1
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: Some cool stuff that we need to describe here.
+Authors@R: c(person("Julian", "Urban", email = "urbanj@uni-trier.de", role = c("aut", "cre")),
+    person("Hannah", "Heister", role = c("aut")),
+    person("Klazien", "de Vries", role = c("aut")),
+    person("Francesco", "Innocenti", role = c("aut")),
+    person("Lieke", "Voncken", role = c("aut")),
+    person("Marieke E.", "Timmerman", role = c("aut")),)
+Description: This package enables continous norming using GAMLSS.
 License: GPL-3
 Depends: R (>= 4.3.0)
 Imports: gamlss (>= 5.4-20), gamlss.dist (>= 6.1-1), gamlss.tr (>= 5.1-7)
@@ -16,6 +19,7 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-Author: 
-Maintainer: 
-BugReports: https://github.com/...
+Author: Julian Urban [aut, cre], Hannah Heister [aut], Klazien de Vries [aut], Francesco Innocenti [aut], Lieke Voncken [aut], Marieke E. Timmerman [aut]
+Maintainer: Julian Urban <urbanj@uni-trier.de>
+BugReports: https://github.com/JulianUrban/GAMLSSnorming/issues
+
