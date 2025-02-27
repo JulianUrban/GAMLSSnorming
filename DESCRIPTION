@@ -6,7 +6,7 @@ Authors@R: c(person("Julian", "Urban", email = "urbanj@uni-trier.de", role = c("
     person("Klazien", "de Vries", role = c("aut")),
     person("Francesco", "Innocenti", role = c("aut")),
     person("Lieke", "Voncken", role = c("aut")),
-    person("Marieke E.", "Timmerman", role = c("aut")),)
+    person("Marieke E.", "Timmerman", role = c("aut")))
 Description: This package enables continous norming using GAMLSS.
 License: GPL-3
 Depends: R (>= 4.3.0)
